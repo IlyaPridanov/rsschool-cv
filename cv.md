@@ -22,3 +22,20 @@ July - August 2019 completed an internship at Euromedia.
 August - October - trained in League A.
 
 From January to the present, I have been coding remotely at Pixelplus.
+
+## My skills
+* HTML5
+  * BEM
+  * Pug
+* CSS3
+  * Adaptive layout
+  * LESS
+  * SASS
+* JS
+  * DOM
+  * AJAX
+  * jQuery
+* Git
+* Gulp
+* Figma
+* Adobe Photoshop

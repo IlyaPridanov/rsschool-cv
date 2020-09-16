@@ -39,3 +39,8 @@ From January to the present, I have been coding remotely at Pixelplus.
 * Gulp
 * Figma
 * Adobe Photoshop
+
+## Example code
+Some of my works:
+
+github.io: ([ilyapridanov.github.io]https://ilyapridanov.github.io))

@@ -41,6 +41,11 @@ From January 2020 to the present, I have been coding remotely at Pixelplus.
 * Adobe Photoshop
 
 ## Example code
-Some of my works:
+Some of my works Codewars Handshake problem:
 
-github.io: ([ilyapridanov.github.io]https://ilyapridanov.github.io))
+```javascript
+function getParticipants(h){
+  for(var i=0,k=1;i<h;i+=k++){}
+  return k;
+}
+```

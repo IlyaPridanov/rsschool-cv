@@ -17,11 +17,17 @@ I have a higher education in a technical specialty. In 2017, I became interested
 
 I would very much like to successfully complete my studies at the **R S School**.
 
+## Experience
+
 July - August 2019 completed an internship at Euromedia.
 
 August 2020 - October 2020 - trained in League A.
 
 From January 2020 to the present, I have been coding remotely at Pixelplus.
+
+## Language
+
+Only Russian :)
 
 ## My skills
 * HTML5

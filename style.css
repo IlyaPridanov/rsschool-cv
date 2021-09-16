@@ -8,13 +8,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;;
+  font-family: "Arial", sans-serif;
   font-size: 17px;
   line-height: 28px;
   font-weight: 400;
   font-style: normal;
   color: black;
-  background-color: white;
+  background-color: #ded1f5;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -59,9 +59,27 @@ img {
   width: 1200px;
 }
 
+/* link */
+
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.link:focus,
+.link:hover,
+.link:active {
+  text-decoration: underline;
+
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /*header*/
 
 .header {
+  position: relative;
+
   flex: 0 0 auto;
   padding: 20px 0;
 }
@@ -70,6 +88,35 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header__logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* nav */
+
+.nav {
+  padding: 9px 0;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item {
+  padding: 5px 9px;
+}
+
+.nav__link {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
 }
 
 /*main*/
@@ -89,7 +136,7 @@ img {
   grid-row: 1/4;
 }
 
-@media(max-width:920px) {
+@media (max-width: 920px) {
   .main__row {
     display: block;
   }
@@ -97,7 +144,14 @@ img {
 
 /* section */
 
-@media(max-width:920px) {
+.section iframe {
+  max-width: 100%;
+  width: 100%;
+
+  border: none;
+}
+
+@media (max-width: 920px) {
   .section {
     margin-bottom: 50px;
   }
@@ -105,6 +159,16 @@ img {
   .section__img {
     margin: 0 auto;
     display: block;
+  }
+
+  .section iframe {
+    height: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section iframe {
+    height: 300px;
   }
 }
 
@@ -118,40 +182,146 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 25px;
+}
+
+.footer__text {
+  margin: 0;
 }
 
 .footer__text--bottom {
   align-self: flex-end;
 }
 
-/* link */
-
-.link {
-  text-decoration: none;
+.footer__link {
+  display: block;
 }
 
-.link:focus,
-.link:hover,
-.link:active {
-  text-decoration: underline;
+.footer__link img {
+  width: 100px;
+  height: auto;
+}
 
-  opacity: 0.8;
-  cursor: pointer;
+@media screen and (max-width: 600px) {
+  .footer__column {
+    flex: 1 0 100%;
+    margin-bottom: 25px;
+  }
 }
 
 /* h1 */
 
-@media(max-width:920px) {
+@media (max-width: 920px) {
   .h1 {
     text-align: center;
   }
 }
 
-
 /* h2 */
 
-@media(max-width:920px) {
+@media (max-width: 920px) {
   .h2 {
     text-align: center;
   }
 }
+
+/* hamburger */
+
+.hamburger {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background: none;
+  outline: none;
+  border: none;
+
+  transform: scaleX(1.2) scaleY(0.85);
+}
+
+.hamburger__bar {
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #000000;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.hamburger__bar--bar1 {
+  top: 0;
+  transform-origin: 5%;
+}
+
+.hamburger__bar--bar2,
+.hamburger__bar--bar3 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger__bar--bar3 {
+  right: 0;
+}
+
+.hamburger__bar--bar4 {
+  bottom: 0;
+  transform-origin: 5%;
+}
+
+/* Стили для активной кнопки*/
+
+.js-btn-active {
+  transform: scaleX(1) scaleY(1);
+}
+
+.js-btn-active .hamburger__bar--bar1 {
+  transform: rotate(45deg);
+  height: 3px;
+  width: 42px;
+}
+
+.js-btn-active .hamburger__bar--bar3 {
+  transform: rotate(45deg) translateY(-50%);
+  height: 3px;
+  background-color: transparent !important;
+}
+
+.js-btn-active .hamburger__bar--bar2 {
+  transform: rotate(-45deg) translateY(-50%);
+  height: 3px;
+  background-color: transparent !important;
+}
+
+.js-btn-active .hamburger__bar--bar4 {
+  transform: rotate(-45deg);
+  height: 3px;
+  width: 42px;
+}
+
+/* js-block */
+
+.js-block {
+    position: absolute;
+    z-index: 30;
+    top: 99.2%;
+    left: 0;
+    width: 100%;
+
+    transition: all 0.2s ease-in;
+    transform-origin: 0 0;
+
+    opacity: 1;
+}
+
+.js-block-inactive {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+

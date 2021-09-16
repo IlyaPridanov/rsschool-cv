@@ -1,6 +1,6 @@
 # The Rolling Scopes School
 
-**2020-Q3**
+**2021-Q3**
 
 ---
 
@@ -8,7 +8,7 @@
 Ilya Pridanov ([@IlyaPridanov](https://github.com/IlyaPridanov))
 
 ## Contacts
-E-mail: [kukudmitriykuku@gmail.com](mailto:kukudmitriykuku@gmail.com)
+E-mail: [ik.front2558988@gmail.com](mailto:ik.front2558988@gmail.com)
 
 Telegram: [@yuryev_den](https://t.me/yuryev_den)
 
@@ -17,11 +17,17 @@ I have a higher education in a technical specialty. In 2017, I became interested
 
 I would very much like to successfully complete my studies at the **R S School**.
 
+## Experience
+
 July - August 2019 completed an internship at Euromedia.
 
-August - October - trained in League A.
+August 2020 - October 2020 - trained in League A.
 
-From January to the present, I have been coding remotely at Pixelplus.
+From January 2020 to the present, I have been coding remotely at Pixelplus.
+
+## Language
+
+Only Russian :)
 
 ## My skills
 * HTML5
@@ -41,6 +47,15 @@ From January to the present, I have been coding remotely at Pixelplus.
 * Adobe Photoshop
 
 ## Example code
-Some of my works:
+Some of my works Codewars Handshake problem:
 
-github.io: ([ilyapridanov.github.io]https://ilyapridanov.github.io))
+```javascript
+function getParticipants(h){
+  for(var i=0,k=1;i<h;i+=k++){}
+  return k;
+}
+```
+
+## There will be a video
+
+[Видео](https://youtu.be/oa-9OBDIIeo)

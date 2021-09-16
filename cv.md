@@ -8,7 +8,7 @@
 Ilya Pridanov ([@IlyaPridanov](https://github.com/IlyaPridanov))
 
 ## Contacts
-E-mail: [kukudmitriykuku@gmail.com](mailto:kukudmitriykuku@gmail.com)
+E-mail: [ik.front2558988@gmail.com](mailto:ik.front2558988@gmail.com)
 
 Telegram: [@yuryev_den](https://t.me/yuryev_den)
 

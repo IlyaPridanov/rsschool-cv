@@ -24,10 +24,14 @@
     });
 
     const navLink = document.querySelectorAll('.nav__link');
+    const nav = document.querySelector('.nav');
+    const hamburger = document.querySelector('.hamburger');
 
     navLink.forEach(function(item){
         item.addEventListener('click',function(evt){
             evt.preventDefault();
+            nav.classList.add('js-block-inactive');
+            hamburger.classList.remove('js-btn-active');
             document.querySelector(this.getAttribute('href')).scrollIntoView({ 
                 behavior: 'smooth' 
             });

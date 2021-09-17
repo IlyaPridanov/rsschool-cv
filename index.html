@@ -5,61 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rsschool-cv-html</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
     <header class="header">
-      <div class="container header__row">
-        <a href="https://ilyapridanov.github.io/rsschool-cv/cv" class="header__ link link">rsschool-cv-md</a>
+      <div class="header__row">
         <a href="https://rs.school" class="header__logo link">
-          <img src="img/logo-rsschool.png" alt="logo-rsschool">
+          <img src="img/rs_school_js.svg" alt="logo-rsschool" width="300" height="111">
         </a>
+        <a href="https://ilyapridanov.github.io/rsschool-cv/cv" class="header__link link">rsschool-cv-md</a>
+        <button class="hamburger header__hamburger js-btn" type="button" data-block="header-nav">
+          <span class="hamburger__bar hamburger__bar--bar1"></span>
+          <span class="hamburger__bar hamburger__bar--bar2"></span>
+          <span class="hamburger__bar hamburger__bar--bar3"></span>
+          <span class="hamburger__bar hamburger__bar--bar4"></span>
+        </button>
       </div>
+      <nav class="nav header__nav js-block js-block-inactive" data-block="header-nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="link nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#story" class="link nav__link">Story</a>
+          </li>
+          <li class="nav__item">
+            <a href="#student" class="link nav__link">Student</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="link nav__link">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="link nav__link">My skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#video" class="link nav__link">There will be a video</a>
+          </li>
+          <li class="nav__item">
+            <a href="#language" class="link nav__link">language</a>
+          </li>
+          <li class="nav__item">
+            <a href="#example" class="link nav__link">Example code</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
-      <div class="container">
-        <h1 class="main__caption h1">The Rolling Scopes School</h1>
-        <div class="main__row">
-          <section class="main__section main__section--column section">
-            <h2 class="section__caption h2">About me</h2>
-            <img class="section__img" src="img/avatar.png" alt="avatar">
-            <p class="section__text">
-              I have a higher education in a technical specialty. In 2017,
-              I became interested in website layout. In 2019, 
-              I successfully completed training in the profession 
-              “Front-end developer” at HTML Academy. Citizenship of 
-              the Russian Federation.
-            </p>
-            <p class="section__text">
-              I would very much like to successfully complete my studies at the R S School.
-            </p>
-            <p class="section__text">
-              July - August 2019 completed an internship at Euromedia.
-            </p>
-            <p class="section__text">
-              August - October - trained in League A.
-            </p>
-            <p class="section__text">
-              From January to the present, I have been coding remotely at Pixelplus.
-            </p>
-          </section>
+      <h1 class="main__caption h1">The Rolling Scopes School</h1>
+      <div class="main__row">
+        <div class="main__column">
           <section class="main__section section">
-            <h2 class="section__caption h2">Student</h2>
+            <h2 class="section__caption h2" id="about">About me</h2>
+            <figure class="section__figure">
+              <img class="section__img" src="img/avatar.png" alt="avatar" width="456" height="411">
+              <figcaption class="section__figcaption">Middle and his junior</figcaption>
+            </figure>
+            <article class="section__article">
+              <h3 class="section__caption h3" id="story">
+                Story
+              </h3>
+              <p class="section__text">
+                I have a higher education in a technical specialty. In 2017,
+                I became interested in website layout. In 2019, 
+                I successfully completed training in the profession 
+                “Front-end developer” at HTML Academy. Citizenship of 
+                the Russian Federation.
+              </p>
+              <p class="section__text">
+                I would very much like to successfully complete my studies at the R S School.
+              </p>
+              <p class="section__text">
+                July - August 2019 completed an internship at Euromedia.
+              </p>
+              <p class="section__text">
+                August - October - trained in League A.
+              </p>
+              <p class="section__text">
+                From January to the present, I have been coding remotely at Pixelplus.
+              </p>
+            </article>
+          </section>
+        </div>
+        <div class="main__aside">
+          <section class="main__section section">
+            <h2 class="section__caption h2" id="student">Student</h2>
             <p class="section__text">
               Ilya Pridanov(<a href="https://github.com/IlyaPridanov" class="section__link link">@IlyaPridanov</a>)
             </p>
           </section>
           <section class="main__section section">
-            <h2 class="section__caption h2">Contacts</h2>
+            <h2 class="section__caption h2" id="contacts">Contacts</h2>
             <p class="section__text">
-              E-mail: <a href="mailto:kukudmitriykuku@gmail.com" class="section__link link">kukudmitriykuku@gmail.com</a>
+              E-mail: <a href="mailto:ik.front2558988@gmail.com" class="section__link link">ik.front2558988@gmail.com</a>
             </p>
             <p class="section__text">
               Telegram: <a href="https://t.me/yuryev_den" class="section__link link">@yuryev_den</a>
             </p>
           </section>
           <section class="main__section section">
-            <h2 class="section__caption h2">My skills</h2>
+            <h2 class="section__caption h2" id="skills">My skills</h2>
             <ul class="section__list">
               <li class="section__item">
                 HTML5
@@ -92,20 +138,112 @@
           </section>
         </div>
       </div>
+      <section class="main__section section">
+        <h2 class="section__caption h2" id="video">There will be a video</h2>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/oa-9OBDIIeo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <section class="main__section section">
+        <h2 class="section__caption h2" id="example">Example code</h2>
+        <p class="section__text">
+          Some of my works Codewars Handshake problem:
+        </p>
+        <pre class="section__pre">
+          <code class="js">
+            function getParticipants(h){
+              for(var i=0, k=1; i &lt; h; i+ = k++) {}
+              return k;
+            }
+          </code>
+        </pre>
+        <article class="section__article">
+          <h3 class="section__caption h3">Real project</h3>
+          <div class="section__project-row project">
+            <div class="project__item">
+              <h4 class="h4 project__caption">Parts-time</h4>
+              <figure class="project__figure">
+                <a class="project__link" target="_blank" href="https://www.parts-time.com/searchbytype/">
+                  <img src="img/parts.jpg" alt="project-img">
+                </a>
+                <figcaption class="project__figcaption">
+                  Spare parts for restaurant equipment. Only layout, no CMS
+                </figcaption>
+              </figure>
+              <ul class="project__list">
+                <li class="project__text-item">Pug</li>
+                <li class="project__text-item">Adaptive layout</li>
+                <li class="project__text-item">SASS</li>
+                <li class="project__text-item">DOM</li>
+                <li class="project__text-item">jQuery</li>
+                <li class="project__text-item">Git</li>
+                <li class="project__text-item">Gulp</li>
+                <li class="project__text-item">Figma</li>
+              </ul>
+            </div>
+            <div class="project__item">
+              <h4 class="h4 project__caption">Trate</h4>
+              <figure class="project__figure">
+                <a class="project__link" target="_blank" href="https://trate-ag.ru">
+                  <img src="img/trate.jpg" alt="project-img">
+                </a>
+                <figcaption class="project__figcaption">Dentures. Only layout, no CMS</figcaption>
+              </figure>
+              <ul class="project__list">
+                <li class="project__text-item">Pug</li>
+                <li class="project__text-item">Adaptive layout</li>
+                <li class="project__text-item">SASS</li>
+                <li class="project__text-item">DOM</li>
+                <li class="project__text-item">jQuery</li>
+                <li class="project__text-item">Git</li>
+                <li class="project__text-item">Gulp</li>
+                <li class="project__text-item">Figma</li>
+              </ul>
+            </div>
+            <div class="project__item">
+              <h4 class="h4 project__caption">Radax</h4>
+              <figure class="project__figure">
+                <a class="project__link" target="_blank" href="https://www.radaxovens.ru">
+                  <img src="img/radax.jpg" alt="project-img">
+                </a>
+                <figcaption class="project__figcaption">
+                  Ovens. Only layout, no CMS
+                </figcaption>
+              </figure>
+              <ul class="project__list">
+                <li class="project__text-item">Pug</li>
+                <li class="project__text-item">Adaptive layout</li>
+                <li class="project__text-item">SASS</li>
+                <li class="project__text-item">DOM</li>
+                <li class="project__text-item">jQuery</li>
+                <li class="project__text-item">Git</li>
+                <li class="project__text-item">Gulp</li>
+                <li class="project__text-item">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <h2 class="section__caption h2" id="language">Language</h2>
+        <p class="section__text">
+          Only Russian :)
+        </p>
+      </section>
     </main>
     <footer class="footer">
-      <div class="container footer__row">
+      <div class="footer__row">
         <div class="footer__column">
-          <h2 class="footer__caption h2">Example code</h2>
           <p class="footer__text">
             Some of my works:
           </p>
-          <p class="footer__text">github.io: 
-            <a href="https://ilyapridanov.github.io" class="link">ilyapridanov.github.io</a>
+          <p class="footer__text">github: 
+            <a href="https://github.com/IlyaPridanov" class="link">https://github.com/IlyaPridanov</a>
           </p>
         </div>
+        <a href="https://rs.school/js/" class="footer__link"><img src="img/rs_school_js.svg" alt="rs_school_js" width="300" height="111" ></a>
         <p class="footer__text footer__text--bottom">2021-Q3</p>
       </div>
     </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
